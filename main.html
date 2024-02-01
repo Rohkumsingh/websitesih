@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Patient and Doctor Handling System</title>
+  <style>
+    
+    header::before {
+        background: url(img3.avif)
+          no-repeat center; /*center/cover; */
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        
+      }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 0.5em;
+    }
+
+    input, select {
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    button {
+      padding: 0.5em 1em;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    /* New styles for website features */
+    .feature-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .feature-card {
+      flex: 1;
+      padding: 10px;
+      background-color: #eee;
+      margin: 0 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .head1{
+      background-color: aqua;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header class="head1">
+    <h1>Automated Patient and Doctor Handling System</h1>
+  </header>
+  <section>
+   
+
+    <form id="doctorForm">
+      <label for="doctorName">Doctor Name:</label>
+      <input type="text" id="doctorName" required>
+
+      <label for="specialization">Specialization:</label>
+      <input type="text" id="specialization" required>
+
+      <button type="button" onclick="submitDoctor()">Submit Doctor</button>
+    </form>
+
+    <!-- Website features for Patients -->
+    <div class="feature-container">
+      <div class="feature-card" id="bookAppointmentCard">
+        <h3>Book Appointments</h3>
+        <button onclick="bookAppointment()">Book Now</button>
+      </div>
+      
+      <div class="feature-card" id="viewMedicalRecordsCard">
+        <h3>View Medical Records</h3>
+        <button onclick="viewMedicalRecords()">View Records</button>
+      </div>
+      
+      <div class="feature-card" id="communicateDoctorsCard">
+        <h3>Communicate with Doctors</h3>
+        <button onclick="communicateWithDoctors()">Start Communication</button>
+      </div>
+    </div>
+
+  
+    <div class="feature-container">
+      <div class="feature-card" id="manageSchedulesCard">
+        <h3>Manage Schedules</h3>
+        <button onclick="manageSchedules()">Manage Now</button>
+      </div>
+      
+      <div class="feature-card" id="accessPatientInfoCard">
+        <h3>Access Patient Information</h3>
+        <button onclick="accessPatientInfo()">Access Info</button>
+      </div>
+      
+      <div class="feature-card" id="communicatePatientsCard">
+        <h3>Communicate with Patients</h3>
+        <button onclick="communicateWithPatients()">Start Communication</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function submitPatient() {
+      // Add logic to send patient data to the backend
+      alert('Patient data submitted!');
+    }
+
+    function submitDoctor() {
+      // Add logic to send doctor data to the backend
+      alert('Doctor data submitted!');
+    }
+
+    function bookAppointment() {
+      alert('Patient booked an appointment!');
+    }
+
+    function viewMedicalRecords() {
+      alert('Patient viewing medical records!');
+    }
+
+    function communicateWithDoctors() {
+      alert('Patient communicating with doctors!');
+    }
+
+    function manageSchedules() {
+      alert('Doctor managing schedules!');
+    }
+
+    function accessPatientInfo() {
+      alert('Doctor accessing patient information!');
+    }
+
+    function communicateWithPatients() {
+      alert('Doctor communicating with patients!');
+    }
+  </script>
+</body>
+</html>
