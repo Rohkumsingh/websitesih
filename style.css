@@ -20,7 +20,7 @@ body::before {
   margin: auto;
   margin-top: 100px;
   border-radius: 20px;
-  background-image: radial-gradient(yellow, pink, red);
+  background-image: radial-gradient(rgb(27, 224, 224), rgb(235, 226, 228));
   animation: fadeIn 1s ease-out;
 }
 .container .welcome {
